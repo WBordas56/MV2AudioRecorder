@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MV2AudioRecorder.MainPage"
+             Title="Examen Final"
+             Background="#f3f5f9">
+
+    <ScrollView>
+        <StackLayout>
+            
+            <Entry Placeholder="Ingrese una descripción" Margin="30,0,30,0" x:Name="txtdescripcion"/>
+            <Grid Margin="20,0,20,0">
+                <Button Text="Grabar Audio" Grid.Column="0" x:Name="btnGrabar" Clicked="btnGrabar_Clicked" TextTransform="None" BackgroundColor="Crimson" TextColor="White" CornerRadius="8" FontSize="16"/>
+                <Button Text="Detener Audio" Grid.Column="1" x:Name="btnDetener" Clicked="btnDetener_Clicked" IsEnabled="False" TextTransform="None" BackgroundColor="ForestGreen" TextColor="White" CornerRadius="8" FontSize="16"/>
+                <Button Text="Listar Audios" Grid.Row="1" Grid.ColumnSpan="2" x:Name="btnlistarAudio" Clicked="btnlistarAudio_Clicked" TextTransform="None" BackgroundColor="DarkOrange" TextColor="White" CornerRadius="8" FontSize="16"/>
+            </Grid>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
